@@ -15,7 +15,9 @@
         android:layout_height="80sp"
         android:textColor="@color/numberactionButton"
         android:gravity="end"
-        android:maxLines="1"/>
+        android:textSize="40sp"
+        android:ellipsize="start"
+        android:singleLine="true"/>
 
     <TextView
         android:id="@+id/tvResult"
@@ -23,7 +25,9 @@
         android:layout_height="80sp"
         android:textColor="@color/numberactionButton"
         android:gravity="end"
-        android:maxLines="1"/>
+        android:textSize="30sp"
+        android:ellipsize="end"
+        android:singleLine="true"/>
     
     <LinearLayout
         android:layout_width="match_parent"
@@ -152,11 +156,17 @@
                 android:id="@+id/tvZero"
                 style="@style/NumberButtonStyle"
                 android:text="0"/>
+            
+            <ImageView
+                android:id="@+id/ivBack"
+                style="@style/NumberButtonStyle"
+                android:src="@drawable/ic_action_name"
+                android:scaleType="center"/>
 
-            <TextView
+<!--            <TextView
                 android:id="@+id/tvBack"
                 style="@style/NumberButtonStyle"
-                android:text="Back"/>
+                android:text="Back"/>-->
 
             <TextView
                 android:id="@+id/tvEqual"
